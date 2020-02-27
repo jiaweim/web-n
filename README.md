@@ -2,11 +2,17 @@
 
 JavaScript 学习。
 
+基础知识
+
 - [简介](tutorial/1_intro.md)
 - [定义](tutorial/2_script.md)
 - [输出](tutorial/3_output.md)
 - [语法](tutorial/4_syntax.md)
 - [类型](tutorial/5_data_types.md)
+- [运算符](tutorial/6_operators.md)
+
+工具
+
 - [VS Code](tutorial/vscode.md)
 
 ## 兼容性
