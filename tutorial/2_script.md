@@ -6,7 +6,6 @@
     - [`<body>` 内脚本](#body-%e5%86%85%e8%84%9a%e6%9c%ac)
   - [外部脚本](#%e5%a4%96%e9%83%a8%e8%84%9a%e6%9c%ac)
     - [外部 JavaScript 脚本的优势](#%e5%a4%96%e9%83%a8-javascript-%e8%84%9a%e6%9c%ac%e7%9a%84%e4%bc%98%e5%8a%bf)
-    - [外部引用](#%e5%a4%96%e9%83%a8%e5%bc%95%e7%94%a8)
 
 ## `script` 标签
 
@@ -18,7 +17,7 @@ document.getElementById("demo").innerHTML = "我的第一段 JavaScript";
 </script>
 ```
 
-HTML 中可以放置任意数目的 JavaScript 脚本，可以放在 `<body>` 或 `<head>` 中，可以按需求选择。
+HTML 中可以放置任意数目的 JavaScript 脚本，可以放在 `<body>` 或 `<head>` 中，可以按需求选择。当浏览器遇到 `<script>` 标签，会自动执行其中的代码。
 
 ### `<head>` 内脚本
 
@@ -91,10 +90,47 @@ JavaScript 脚本文件扩展名为 `.js`。
 在HTML 中使用外部脚本，在 `<script>` 标签中指定 `src` 属性即可：
 
 ```html
-<script src="aScript.js"></script>
+<script src="/path/to/script.js"></script>
+```
+
+这里 `/path/to/script.js` 是脚本文件从根目录开始的绝对路径。
+
+这里也可以使用完整的 URL 地址：
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
 ```
 
 外部脚本和 `<script>` 标签一样，可以放在 `<head>` 或 `<body>` 中。
+
+要使用多个脚本，用多个标签：
+
+```html
+<script src="/js/script1.js"></script>
+<script src="/js/script2.js"></script>
+…
+```
+
+一般只有最简单的脚本才嵌入到 HTML 中，一般都放在单独的脚本文件中。使用独立的脚本的好处是浏览器会下载它，然后保存在浏览器的缓存中。之后页面想要相同的脚本就从缓存中获取，而不用再次下载。这样既节省流量，也使得页面加载更快。
+
+> 如果设置了 `src` 属性，`script` 标签内容将会被忽略。
+
+即一个单独的 `<script>` 标签不能同时包含 `src` 属性和内部包裹的代码。例如：
+
+```html
+<script src="file.js">
+  alert(1); // 此内容会被忽略，因为设定了 src
+</script>
+```
+
+为了让上面的例子工作，可以将其分为两个 `<script>` 标签：
+
+```html
+<script src="file.js"></script>
+<script>
+  alert(1);
+</script>
+```
 
 ### 外部 JavaScript 脚本的优势
 
@@ -103,18 +139,3 @@ JavaScript 脚本文件扩展名为 `.js`。
 - 分离HTML和代码
 - 使 HTML 和 JavaScript 都更易于阅读和维护
 - 已缓存的 JavaScript 文件可加速网页的加载
-
-使用多个脚本文件，可以使用多个 `<script>` 标签：
-
-```html
-<script src="myScript1.js"></script>
-<script src="myScript2.js"></script>
-```
-
-### 外部引用
-
-可以通过完整的 URL 或者相对当前网页的路径引用外部脚本：
-
-```html
-<script src="https://www.w3school.com.cn/js/myScript1.js"></script>
-```

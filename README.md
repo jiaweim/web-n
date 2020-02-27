@@ -2,14 +2,12 @@
 
 JavaScript 学习。
 
-- [JavaScript 简介](tutorial/1_intro.md)
-- [JavaScript 定义](tutorial/2_script.md)
-- [JavaScript 输出](tutorial/3_output.md)
-  - [代码编辑器](01_2_code_editor.md)
-  - [开发者工具](01_3_developer_console.md)
-- JavaScript 基础
-    1. [Hello World](02_1_helloworld.md)
-    2. [代码结构](02_2_code_structure.md)
+- [简介](tutorial/1_intro.md)
+- [定义](tutorial/2_script.md)
+- [输出](tutorial/3_output.md)
+- [语法](tutorial/4_syntax.md)
+- [类型](tutorial/5_data_types.md)
+- [VS Code](tutorial/vscode.md)
 
 ## 兼容性
 
