@@ -7,15 +7,19 @@
   - [document.write()](#documentwrite)
   - [window.alert()](#windowalert)
   - [console.log()](#consolelog)
+  - [prompt](#prompt)
+  - [confirm](#confirm)
 
 ## JavaScript 显示方法
 
 JavaScript 显示数据方式：
 
-- `window.alert()` 写入警告框
+- `window.alert()` 警告框显示信息。
 - `document.write()` 写入 HTML 输出
 - `innerHTML` 写入 HTML 元素
 - `console.log()` 写入浏览器控制台
+- `prompt` 显示信息要求用户输入文本。点击确定返回文本，点击取消或按下 Esc 键返回 `null`。
+- `confirm` 显示信息等待用户点击确定或取消。点击确定返回 true，点击取消或按下 Esc 键返回 false。
 
 ## innerHTML
 
@@ -126,4 +130,46 @@ console.log(5 + 6);
 
 </body>
 </html>
+```
+
+## prompt
+
+`prompt` 函数接收两个参数：
+
+```js
+result = prompt(title, [default]);
+```
+
+浏览器会显示一个带有文本消息的模态窗口，还有 input 框和确定/取消按钮。
+
+- title
+
+显示给用户的文本
+
+- default
+
+可选的第二个参数，指定 input 框的初始值。
+
+用户可以在 prompt 对话框的 input 框内输入一些内容，然后点击确定。或者他们可以通过按“取消”按钮或按下键盘的 Esc 键，以取消输入。
+
+`prompt` 将返回用户在 input 框内输入的文本，如果用户取消了输入，则返回 null。
+
+## confirm
+
+语法：
+
+```js
+result = confirm(question);
+```
+
+confirm 函数显示一个带有 `question` 以及确定和取消两个按钮的模态窗口。
+
+点击确定返回 `true`，点击取消返回 `false`。
+
+例如：
+
+```js
+let isBoss = confirm("Are you the boss?");
+
+alert( isBoss ); // 如果“确定”按钮被按下，则显示 true
 ```
