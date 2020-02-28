@@ -6,6 +6,7 @@
     - [`<body>` 内脚本](#body-%e5%86%85%e8%84%9a%e6%9c%ac)
   - [外部脚本](#%e5%a4%96%e9%83%a8%e8%84%9a%e6%9c%ac)
     - [外部 JavaScript 脚本的优势](#%e5%a4%96%e9%83%a8-javascript-%e8%84%9a%e6%9c%ac%e7%9a%84%e4%bc%98%e5%8a%bf)
+    - [async 和 defer](#async-%e5%92%8c-defer)
 
 ## `script` 标签
 
@@ -71,7 +72,7 @@ function myFunction() {
 </html>
 ```
 
-可以看到函数定义在 `<body>` 元素的末尾。将脚本放在  `<body>` 末尾可以改善显示的速度，因为编译脚本会拖慢显示。
+可以看到函数定义在 `<body>` 元素的末尾。将脚本放在  `<body>` 末尾可以改善显示的速度，因为编译脚本会拖慢显示，导致一段空白页面显示时间。
 
 ## 外部脚本
 
@@ -139,3 +140,35 @@ JavaScript 脚本文件扩展名为 `.js`。
 - 分离HTML和代码
 - 使 HTML 和 JavaScript 都更易于阅读和维护
 - 已缓存的 JavaScript 文件可加速网页的加载
+
+### async 和 defer
+
+`<scrpt>` 属性 `async` 和 `defer` 设置外部脚本载入和执行的方式：
+
+- `async`，告诉浏览器尽可能的异步执行脚本。添加该属性后，不保证脚本文件的执行顺序。
+
+例如：
+
+```html
+<script async src="service.js"></script>
+<script async src="app.js"></script>
+```
+
+`app.js` 可能比 `service.js` 先执行，所以你要确认两者执行没有依赖性。
+
+- `defer`属性要求浏览器在解析完整个文档后再执行脚本。
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript defer demonstration</title>
+    <script defer src="defer-script.js"></script>
+</head>
+<body>
+</body>
+</html>
+```
+
+如果 `<script>` 放在 `<head>` 里，但是脚本依然会等到 `</html>` 才执行。

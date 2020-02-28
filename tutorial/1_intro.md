@@ -1,8 +1,6 @@
 
 # 简介
 
-TOC
-
 - [简介](#%e7%ae%80%e4%bb%8b)
   - [概述](#%e6%a6%82%e8%bf%b0)
   - [JavaScript 环境](#javascript-%e7%8e%af%e5%a2%83)

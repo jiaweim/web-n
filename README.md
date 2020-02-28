@@ -10,10 +10,18 @@ JavaScript 学习。
 - [语法](tutorial/4_syntax.md)
 - [类型](tutorial/5_data_types.md)
 - [运算符](tutorial/6_operators.md)
+- [控制流](tutorial/7_codeflow.md)
+- [函数](tutorial/8_function.md)
+- [对象](tutorial/10_object.md)
+- [集合](tutorial/11_collect.md)
+- [Math](tutorial/12_math.md)
+- [Date](tutorial/13_date.md)
+- [DOM](tutorial/14_dom.md)
 
 工具
 
 - [VS Code](tutorial/vscode.md)
+- [Babel](https://babeljs.io/)
 
 ## 兼容性
 
@@ -32,6 +40,7 @@ JavaScript 是一个正在发展的语言，会定期添加新的功能。
 - [JavaScript 参考](https://www.w3schools.com/jsref/default.asp)
 - [JavaScript 教程](https://javascript.info/)
 - [x] [JavaScript 教程中文版](https://zh.javascript.info/)
+- [ ] [Learn JS](https://www.learn-js.org/)
 - [ECMA-262 规范](https://tc39.es/ecma262/)
 
 ECMA-262 规范包含 JavaScript 最为深入、详细和规范的信息，它定义了这个语言。

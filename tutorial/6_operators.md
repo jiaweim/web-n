@@ -15,6 +15,9 @@
       - [null 和 0](#null-%e5%92%8c-0)
       - [undefined](#undefined)
   - [逻辑运算符](#%e9%80%bb%e8%be%91%e8%bf%90%e7%ae%97%e7%ac%a6)
+    - [或](#%e6%88%96)
+    - [与](#%e4%b8%8e)
+    - [非](#%e9%9d%9e)
   - [类型运算符](#%e7%b1%bb%e5%9e%8b%e8%bf%90%e7%ae%97%e7%ac%a6)
   - [位运算符](#%e4%bd%8d%e8%bf%90%e7%ae%97%e7%ac%a6)
   - [逗号运算符](#%e9%80%97%e5%8f%b7%e8%bf%90%e7%ae%97%e7%ac%a6)
@@ -107,7 +110,13 @@ alert( 8 % 3 ); // 2 是 8 / 3 的余数
 alert( 6 % 3 ); // 0 是 6 / 3 的余数
 ```
 
+In JavaScript, the modulus operator is used not only on integers, but also on floating point numbers.
+
 ### 自增/自减
+
+|Operator|Description|Example|Result|
+|---|---|---|---|
+|var++|Post Increment|var = 0, b = 10; var a= b++|a = 10 and b = 11|
 
 - 自增 ++ 将变量与 1 相加：
 
@@ -261,17 +270,17 @@ alert( '6' / '2' ); // 3
 
 ## 比较运算符
 
-|运算符|描述|
-|---|---|
-|==|等于|
-|===|等值等型|
-|!=|不相等|
-|!==|不等值或不等型|
-|>|大于|
-|<|小于|
-|>=|大于或等于|
-|<=|小于或等于|
-|?|三元运算符|
+|运算符|描述|Description|
+|---|---|---|
+|==|等于|Equal to|
+|===|等值等型|Identical (equal and of same type)|
+|!=|不相等|Not equal to|
+|!==|不等值或不等型|Not Identical|
+|>|大于|Greater than|
+|<|小于|Less than|
+|>=|大于或等于|Greater than or equal to|
+|<=|小于或等于|Less than or equal to|
+|?|三元运算符|conditional operator|
 
 ### 不同类型的比较
 
@@ -363,11 +372,97 @@ alert( undefined == 0 ); // false (3)
 
 ## 逻辑运算符
 
-|运算符|描述|
-|---|---|
-|&&|逻辑与|
-|`||`|逻辑或|
-|!|逻辑非|
+|运算符|描述|Description|
+|---|---|---|
+|&&|逻辑与|Returns true, if both operands are true|
+|`||`|逻辑或|Returns true, if one of the operands is true|
+|!|逻辑非|Returns true, if the operand is false, and false, if the operand is true|
+
+### 或
+
+常规用法不提，下面看看一些特殊用法。
+
+给定多个参与或运算的值：
+
+```js
+result = value1 || value2 || value3;
+```
+
+或运算符 `||` 做了如下的事情：
+
+- 从左到右依次计算操作数。
+- 处理每一个操作数时，都将其转化为布尔值。如果结果是 true，就停止计算，返回这个操作数的初始值。
+- 如果所有的操作数都被计算过（也就是，转换结果都是 false），则返回最后一个操作数。
+
+返回的值是操作数的初始形式，不会做布尔转换。
+
+也就是，一个或 "||" 运算的链，将返回第一个真值，如果不存在真值，就返回该链的最后一个值。如：
+
+```js
+alert( 1 || 0 ); // 1（1 是真值）
+alert( true || 'no matter what' ); //（true 是真值）
+
+alert( null || 1 ); // 1（1 是第一个真值）
+alert( null || 0 || 1 ); // 1（第一个真值）
+alert( undefined || null || 0 ); // 0（所有的转化结果都是 false，返回最后一个值）
+```
+
+- 短路取值
+
+从左到右计算并测试每个操作数。当找到第一个真值，计算停止并返回这个值。这个过程就叫做“短路取值”。
+
+例如：
+
+```js
+let x;
+
+true || (x = 1);
+
+alert(x); // undefined，因为 (x = 1) 没有被执行
+```
+
+### 与
+
+多个参加与运算的值：
+
+```js
+result = value1 && value2 && value3;
+```
+
+与运算 && 做了如下的事：
+
+- 从左到右依次计算操作数。
+- 处理每一个操作数时，都将其转化为布尔值。如果结果是 false 就停止计算，并返回这个操作数的初始值。
+- 如果所有的操作数都被计算过（也就是，转换结果都是 true），则返回最后一个操作数。
+
+换句话说，**与操作符**返回第一个假值，如果没有假值就返回最后一个值。
+
+上面的规则和**或**运算很像，区别在于**与**返回第一个假值而**或**返回第一个真值。
+
+如：
+
+```js
+// 如果第一个操作符是真值，
+// 与操作返回第二个操作数：
+alert( 1 && 0 ); // 0
+alert( 1 && 5 ); // 5
+
+// 如果第一个操作符是假值，
+// 与操作直接返回它。第二个操作数被忽略
+alert( null && 5 ); // null
+alert( 0 && "no matter what" ); // 0
+```
+
+### 非
+
+两个非运算 `!!` 有时候用来将某个值转化为布尔类型：
+
+```js
+alert( !!"non-empty string" ); // true
+alert( !!null ); // false
+```
+
+也就是，第一个非运算将该值转化为布尔类型并取反，第二个非运算再次取反。最后我们就得到了一个任意值到布尔值的转化。
 
 ## 类型运算符
 
