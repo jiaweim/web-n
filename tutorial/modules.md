@@ -42,4 +42,3 @@ sayHi('John'); // Hello, John!
 ```
 
 ## 核心模块功能
-
