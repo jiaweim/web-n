@@ -42,3 +42,17 @@ HTML 文件是一个三明治结构，首尾都有 `<html>` 标签。上面文�
 - `<h1>` 定义最大的标题
 - `<p>` 定义段落
 - HTML 文件后缀 `.html` 或 `.htm`。
+
+## HTML 属性
+
+属性为元素提供了额外的信息，在元素的 start tag 中指定。大部分属性都有对应的值：
+
+```html
+<p align="center">
+   This text is aligned to center
+</p>
+```
+
+其中 `align` 的 "center" 值表示段落的内容居中：
+
+![align](images/2020-02-29-10-59-57.png)
