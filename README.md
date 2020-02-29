@@ -1,5 +1,9 @@
 # TOC
 
+Web 学习。
+
+## JavaScript
+
 JavaScript 学习。
 
 基础知识
@@ -23,7 +27,7 @@ JavaScript 学习。
 - [VS Code](tutorial/vscode.md)
 - [Babel](https://babeljs.io/)
 
-## 兼容性
+### 兼容性
 
 JavaScript 是一个正在发展的语言，会定期添加新的功能。
 
@@ -32,7 +36,7 @@ JavaScript 是一个正在发展的语言，会定期添加新的功能。
 - [功能支持表](https://caniuse.com/)
 - [支持及不支持的语言功能和引擎表](https://kangax.github.io/compat-table/es6/)
 
-## References
+### References
 
 - [TRY JAVASCRIPT](https://www.javascript.com/)
 - [W3C 教程](https://www.w3schools.com/js/)
@@ -52,3 +56,14 @@ ECMA-262 规范包含 JavaScript 最为深入、详细和规范的信息，它�
 - [MSDN](http://msdn.microsoft.com/)
 
 Microsoft 手册中包含许多信息，包括 JavaScript （一般简称为 JScript）。如果需要了解IE特定的功能，最好到这里查找。
+
+## HTML
+
+### 基础知识
+
+- [简介](html_notes/1_intro.md)
+
+### 参考
+
+- [w3schools.com](https://www.w3schools.com/html/)
+- [Mozilla](https://developer.mozilla.org/zh-CN/docs/Web/HTML)
