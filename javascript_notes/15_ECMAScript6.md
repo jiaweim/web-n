@@ -27,7 +27,6 @@
   - [ES6 Map](#es6-map)
     - [方法](#%e6%96%b9%e6%b3%95)
   - [ES6 Set](#es6-set)
-  - [Promises](#promises)
 
 ## 简介
 
@@ -738,62 +737,4 @@ console.log(set.has(9));
 
 for (let v of set.values())
   console.log(v);
-```
-
-## Promises
-
-Promise 相对 `setTimeout()` 类型的方法，是一种更好的异步编程的方式。
-
-例如：
-
-```js
-setTimeout(function() {
-  console.log("Work 1");
-  setTimeout(function() {
-    console.log("Work 2");
-  }, 1000);
-}, 1000);
-console.log("End");
-```
-
-按顺序输出 "End", "Work 1", "Work 2"（异步执行）。如果时间更多，代码就变得十分复杂。
-
-ES6 通过 Promise 解决该问题。promise 创建方式：
-
-```js
-new Promise(function(resolve, reject) {
-    // Work
-    if (success)
-        resolve(result);
-    else
-        reject(Error("failure"));
-});
-```
-
-如果一个方法返回 promise，其调用使用包含连个输入方法的 `then` 方法，一个用于成功，一个用于失败。例如：
-
-```js
-function asyncFunc(work) {
-  return new Promise(function(resolve, reject) {
-    if (work === "")
-      reject(Error("Nothing"));
-    setTimeout(function() {
-      resolve(work);
-    }, 1000);
-  });
-}
-
-asyncFunc("Work 1") // Task 1
-    .then(function(result) {
-        console.log(result);
-        return asyncFunc("Work 2"); // Task 2
-    }, function(error) {
-        console.log(error);
-    })
-    .then(function(result) {
-        console.log(result);
-    }, function(error) {
-        console.log(error);
-    });
-console.log("End");
 ```

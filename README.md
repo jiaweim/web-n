@@ -32,6 +32,10 @@ JavaScript 学习。
 - [Date](tutorial/13_date.md)
 - [DOM](tutorial/14_dom.md)
 
+专题
+
+- [闭包](tutorial/../javascript_notes/18_closure.md)
+
 工具
 
 - [VS Code](tutorial/vscode.md)
