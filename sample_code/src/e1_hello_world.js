@@ -5,4 +5,4 @@ function abs(x) {
         return -x;
 }
 
-console.log(NaN === NaN);
+module.exports = abs;

@@ -1,6 +1,7 @@
 {
     "dependencies": {
         "d3": "^5.15.0",
-        "jest": "^25.1.0"
+        "jest": "^25.1.0",
+        "plotly.js-dist": "^1.52.3"
     }
 }

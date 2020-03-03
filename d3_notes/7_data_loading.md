@@ -31,7 +31,7 @@ http-server [path] [options]
 
 服务器地址 [http://localhost:8080/](http://localhost:8080/)
 
-> 缓存默认开始，使用 `-c-1` 选项可以禁用缓存 
+> 缓存默认开始，使用 `-c-1` 选项可以禁用缓存
 
 ### 可用选项
 
@@ -40,8 +40,6 @@ http-server [path] [options]
 `-a`, 地址，默认 0.0.0.0
 
 `-d` 显示目录列表，默认 `true`
-
-
 
 ## d3.csv()
 
@@ -64,4 +62,6 @@ Name, Age
 John, 30
 Jane,32
 ```
+
+[在控制台输出CSV内容](../sample_code/d3_demos/data_csv.html)。
 

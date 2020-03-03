@@ -7,7 +7,8 @@
 
 <body>
     <script>
-        d3.csv("/data/employee.csv", function (data) {
+        d3.csv("data/employee.csv", function (data) {
+            console.log(data);
             for (let i = 0; i < data.length; i++) {
                 console.log(data[i].Name);
                 console.log(data[i].Age);
