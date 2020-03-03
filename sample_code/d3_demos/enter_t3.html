@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../d3.min.js"></script>
+</head>
+
+<body>
+    <script>
+        let matrix = [
+            [1, 2, 3, 4],
+            [5, 6, 7, 8],
+            [9, 10, 11, 12],
+            [13, 14, 15, 16]
+        ];
+
+        let tr = d3.select('body')
+            .append("table") // add table
+            .selectAll("tr")    // select all tr
+            .data(matrix)   // join matrix array
+            .enter()    // create placeholders for each row in the array
+            .append('tr');  // create tr in each place holder
+
+        let td = tr.selectAll('td')
+            .data(function (d) {
+                console.log(d);
+                return d;
+            })
+            .enter()
+            .append('td')
+            .text(function (d) {
+                console.log(d);
+                return d; // add value to each inner array as text
+            })
+    </script>
+</body>
+
+</html>

@@ -1,22 +1,21 @@
 # TOC
 
-Web 学习。
+Web 学习笔记。
 
 - [TOC](#toc)
   - [JavaScript](#javascript)
     - [兼容性](#%e5%85%bc%e5%ae%b9%e6%80%a7)
     - [References](#references)
   - [HTML](#html)
-    - [基础知识](#%e5%9f%ba%e7%a1%80%e7%9f%a5%e8%af%86)
     - [HTML References](#html-references)
   - [CSS](#css)
     - [CSS References](#css-references)
+  - [D3](#d3)
+    - [D3 References](#d3-references)
 
 ## JavaScript
 
-JavaScript 学习。
-
-基础知识
+JavaScript 笔记：
 
 - [简介](tutorial/1_intro.md)
 - [定义](tutorial/2_script.md)
@@ -73,7 +72,7 @@ Microsoft 手册中包含许多信息，包括 JavaScript （一般简称为 JSc
 
 ## HTML
 
-### 基础知识
+HTML 笔记：
 
 - [简介](html_notes/1_intro.md)
 
@@ -84,7 +83,33 @@ Microsoft 手册中包含许多信息，包括 JavaScript （一般简称为 JSc
 
 ## CSS
 
+CSS 笔记：
+
 ### CSS References
 
 - [W3C](https://www.w3schools.com/css/default.asp
 )
+
+## D3
+
+D3 笔记：
+
+- [Selection](d3_notes/1_selection.md)
+- [DOM 操作](d3_notes/2_dom_manipulation.md)
+- [Function Data](d3_notes/3_function_data.md)
+- [事件处理](d3_notes/4_event_handing.md)
+- [动画](d3_notes/5_animation.md)
+
+### D3 References
+
+- [D3 Home Page](https://d3js.org/)
+- [D3 GitHub](https://github.com/d3/d3)
+- [Observable](https://observablehq.com/)
+- [Bl.ock Builder](https://blockbuilder.org/)
+- [Bl.ock Builder 检索](https://blockbuilder.org/search)
+- [D3 in Depth](https://www.d3indepth.com/)
+- [Dashing D3.js](https://www.dashingd3js.com/table-of-contents)
+- [D3 中文文档](https://github.com/xswei/d3js_doc)
+- [D3.js Tutorials](https://www.tutorialsteacher.com/d3js)
+- [D3.js tutorial in tutorialspoint](https://www.tutorialspoint.com/d3js/index.htm)
+- [D3.js Graph Gallery](https://www.d3-graph-gallery.com/all.html)

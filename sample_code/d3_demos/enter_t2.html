@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../d3.min.js"></script>
+</head>
+
+<body>
+    <script>
+        let data = [4, 5, 6, 8, 2];
+        let body = d3.select('body')
+            .selectAll("span")
+            .data(data)
+            .enter()
+            .append("span")
+            .style('color', function (d) {
+                if (d % 2 === 0) {
+                    return 'green';
+                } else {
+                    return 'red';
+                }
+            })
+            .style('font-size', function (d) {
+                if (d % 2 === 0) {
+                    return "20px";
+                } else {
+                    return "16px";
+                }
+            })
+            .text(function (d) {
+                return d + " ";
+            })
+    </script>
+</body>
+
+</html>
