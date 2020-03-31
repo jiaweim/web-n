@@ -41,7 +41,7 @@ JavaScript 显示数据方式：
 </script>
 
 </body>
-</html> 
+</html>
 ```
 
 NOTE: 更改 HTML 元素的 innerHTML 属性是在 HTML 中显示数据的常用方法。
