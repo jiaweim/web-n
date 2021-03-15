@@ -1,10 +1,10 @@
-# TOC
+# Web 学习笔记
 
 Web 学习笔记。
 
-- [TOC](#toc)
+- [Web 学习笔记](#web-学习笔记)
   - [JavaScript](#javascript)
-    - [兼容性](#%e5%85%bc%e5%ae%b9%e6%80%a7)
+    - [兼容性](#兼容性)
     - [References](#references)
   - [HTML](#html)
     - [HTML References](#html-references)
@@ -37,7 +37,6 @@ JavaScript 笔记：
 
 工具
 
-- [VS Code](tutorial/vscode.md)
 - [Babel](https://babeljs.io/)
 
 ### 兼容性
