@@ -1,12 +1,15 @@
 # 脚本定义
 
-- [脚本定义](#%e8%84%9a%e6%9c%ac%e5%ae%9a%e4%b9%89)
-  - [`script` 标签](#script-%e6%a0%87%e7%ad%be)
-    - [`<head>` 内脚本](#head-%e5%86%85%e8%84%9a%e6%9c%ac)
-    - [`<body>` 内脚本](#body-%e5%86%85%e8%84%9a%e6%9c%ac)
-  - [外部脚本](#%e5%a4%96%e9%83%a8%e8%84%9a%e6%9c%ac)
-    - [外部 JavaScript 脚本的优势](#%e5%a4%96%e9%83%a8-javascript-%e8%84%9a%e6%9c%ac%e7%9a%84%e4%bc%98%e5%8a%bf)
-    - [async 和 defer](#async-%e5%92%8c-defer)
+- [脚本定义](#脚本定义)
+  - [`script` 标签](#script-标签)
+    - [`<head>` 内脚本](#head-内脚本)
+    - [`<body>` 内脚本](#body-内脚本)
+  - [外部脚本](#外部脚本)
+    - [外部 JavaScript 脚本的优势](#外部-javascript-脚本的优势)
+    - [async 和 defer](#async-和-defer)
+
+2021-05-28, 14:10
+***
 
 ## `script` 标签
 

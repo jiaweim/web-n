@@ -1,22 +1,25 @@
 # 数据类型
 
-- [数据类型](#%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b)
-  - [简介](#%e7%ae%80%e4%bb%8b)
-  - [Number 类型](#number-%e7%b1%bb%e5%9e%8b)
+- [数据类型](#数据类型)
+  - [简介](#简介)
+  - [Number 类型](#number-类型)
     - [BigInt](#bigint)
-    - [十六进制，二进制和八进制](#%e5%8d%81%e5%85%ad%e8%bf%9b%e5%88%b6%e4%ba%8c%e8%bf%9b%e5%88%b6%e5%92%8c%e5%85%ab%e8%bf%9b%e5%88%b6)
+    - [十六进制，二进制和八进制](#十六进制二进制和八进制)
     - [toString(base)](#tostringbase)
     - [Rounding](#rounding)
-  - [String 类型](#string-%e7%b1%bb%e5%9e%8b)
-  - [Boolean 类型](#boolean-%e7%b1%bb%e5%9e%8b)
-  - [null 值](#null-%e5%80%bc)
+  - [String 类型](#string-类型)
+  - [Boolean 类型](#boolean-类型)
+  - [null 值](#null-值)
   - [undefined](#undefined)
-  - [object 和 symbol](#object-%e5%92%8c-symbol)
-  - [typeof 运算符](#typeof-%e8%bf%90%e7%ae%97%e7%ac%a6)
-  - [类型转换](#%e7%b1%bb%e5%9e%8b%e8%bd%ac%e6%8d%a2)
-    - [字符串转换](#%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%bd%ac%e6%8d%a2)
-    - [数字型转换](#%e6%95%b0%e5%ad%97%e5%9e%8b%e8%bd%ac%e6%8d%a2)
-    - [布尔型转换](#%e5%b8%83%e5%b0%94%e5%9e%8b%e8%bd%ac%e6%8d%a2)
+  - [object 和 symbol](#object-和-symbol)
+  - [typeof 运算符](#typeof-运算符)
+  - [类型转换](#类型转换)
+    - [字符串转换](#字符串转换)
+    - [数字型转换](#数字型转换)
+    - [布尔型转换](#布尔型转换)
+
+2021-05-28, 15:00
+***
 
 ## 简介
 

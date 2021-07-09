@@ -15,10 +15,10 @@ Web 学习笔记。
 
 ## JavaScript
 
-JavaScript 笔记：
+JavaScript 学习笔记：
 
-- [简介](tutorial/1_intro.md)
-- [定义](tutorial/2_script.md)
+- [简介](javascript/1_intro.md)
+- [定义](javascript/2_script.md)
 - [输出](tutorial/3_output.md)
 - [语法](tutorial/4_syntax.md)
 - [类型](tutorial/5_data_types.md)
@@ -57,6 +57,7 @@ JavaScript 是一个正在发展的语言，会定期添加新的功能。
 - [JavaScript 教程](https://javascript.info/)
 - [x] [JavaScript 教程中文版](https://zh.javascript.info/)
 - [ ] [Learn JS](https://www.learn-js.org/)
+- [Node.js documentation](https://nodejs.org/api/)
 - [ECMA-262 规范](https://tc39.es/ecma262/)
 
 ECMA-262 规范包含 JavaScript 最为深入、详细和规范的信息，它定义了这个语言。
@@ -86,8 +87,7 @@ CSS 笔记：
 
 ### CSS References
 
-- [W3C](https://www.w3schools.com/css/default.asp
-)
+- [W3C](https://www.w3schools.com/css/default.asp)
 
 ## D3
 

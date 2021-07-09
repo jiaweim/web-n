@@ -1,29 +1,27 @@
 
 # 简介
 
-- [简介](#%e7%ae%80%e4%bb%8b)
-  - [概述](#%e6%a6%82%e8%bf%b0)
-  - [JavaScript 环境](#javascript-%e7%8e%af%e5%a2%83)
-  - [浏览器中的 JavaScript 功能](#%e6%b5%8f%e8%a7%88%e5%99%a8%e4%b8%ad%e7%9a%84-javascript-%e5%8a%9f%e8%83%bd)
-    - [修改 HTML 内容](#%e4%bf%ae%e6%94%b9-html-%e5%86%85%e5%ae%b9)
-    - [修改 HTML 属性](#%e4%bf%ae%e6%94%b9-html-%e5%b1%9e%e6%80%a7)
-    - [改变HTML样式](#%e6%94%b9%e5%8f%98html%e6%a0%b7%e5%bc%8f)
-    - [隐藏 HTML 元素](#%e9%9a%90%e8%97%8f-html-%e5%85%83%e7%b4%a0)
-    - [显示 HTML 元素](#%e6%98%be%e7%a4%ba-html-%e5%85%83%e7%b4%a0)
-  - [浏览器中 JavaScript 的限制](#%e6%b5%8f%e8%a7%88%e5%99%a8%e4%b8%ad-javascript-%e7%9a%84%e9%99%90%e5%88%b6)
-  - [JavaScript 的特殊性](#javascript-%e7%9a%84%e7%89%b9%e6%ae%8a%e6%80%a7)
-  - [JavaScript 扩展](#javascript-%e6%89%a9%e5%b1%95)
-  - [总结](#%e6%80%bb%e7%bb%93)
-  - [控制台](#%e6%8e%a7%e5%88%b6%e5%8f%b0)
+- [简介](#简介)
+  - [概述](#概述)
+  - [JavaScript 环境](#javascript-环境)
+  - [浏览器中的 JavaScript 功能](#浏览器中的-javascript-功能)
+    - [修改 HTML 内容](#修改-html-内容)
+    - [修改 HTML 属性](#修改-html-属性)
+    - [改变HTML样式](#改变html样式)
+    - [隐藏 HTML 元素](#隐藏-html-元素)
+    - [显示 HTML 元素](#显示-html-元素)
+  - [浏览器中 JavaScript 的限制](#浏览器中-javascript-的限制)
+  - [JavaScript 的特殊性](#javascript-的特殊性)
+  - [JavaScript 扩展](#javascript-扩展)
+  - [总结](#总结)
+  - [控制台](#控制台)
     - [Google Chrome](#google-chrome)
   - [IDE](#ide)
-    - [轻量级编辑器](#%e8%bd%bb%e9%87%8f%e7%ba%a7%e7%bc%96%e8%be%91%e5%99%a8)
+    - [轻量级编辑器](#轻量级编辑器)
 
 ## 概述
 
-JavaScript 是为 HTML 和 Web 设计的编程语言。
-
-Web 开发者必须会的三种语言有：
+JavaScript 是为 HTML 和 Web 设计的编程语言。Web 开发者必须会的三种语言有：
 
 - HTML 定义网页内容
 - CSS 定义网页布局
@@ -213,9 +211,7 @@ JavaScript 是唯一包含这三个特征的浏览器技术。
 
 ## JavaScript 扩展
 
-JavaScript 不可能适合所有人，因此现在出现了许多新的语言，这些语言代码在浏览器中运行前被转换为 JavaScript。
-
-现代工具使得这些语言转换快速、透明，从而允许开发人员使用另一种语言进行编码，转换在后台自动完成。
+JavaScript 不可能适合所有人，因此现在出现了许多新的语言，这些语言的代码在浏览器中运行前被转换为 JavaScript。现代工具使得这些语言转换快速、透明，从而允许开发人员使用另一种语言进行编码，转换在后台自动完成。
 
 例如：
 
@@ -223,6 +219,7 @@ JavaScript 不可能适合所有人，因此现在出现了许多新的语言，
 - TypeScript 添加了严格的数据类型，从而简化了复杂系统的开发及支持，由微软开发。
 - Flow 也添加了数据类型，不过方式有所不同，由 Facebook 开发。
 - Dart 是一个独立的语言，具有自己的引擎，可以在非浏览器环境（如移动端）运行，也可以转换为 JavaScript，由 Google 开发。
+- Brython 是一个 Python 的 JavaScript 编译器，可以在不使用 JavaScript 的情况下，以纯 Python 编写应用程序。
 
 还有许多这类语言，不过即使我们使用其中一种编译语言，也应该先好好了解一下 JavaScript。
 

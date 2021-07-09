@@ -1,25 +1,28 @@
-# JavaScript 语法
+# JS 语法
 
-- [JavaScript 语法](#javascript-%e8%af%ad%e6%b3%95)
-  - [Code structure](#code-structure)
-    - [JavaScript 程序](#javascript-%e7%a8%8b%e5%ba%8f)
+- [JS 语法](#js-语法)
+  - [代码结构](#代码结构)
+    - [JavaScript 程序](#javascript-程序)
     - [Statements](#statements)
-    - [分号 `；`](#%e5%88%86%e5%8f%b7)
-    - [空白](#%e7%a9%ba%e7%99%bd)
-    - [行长度和换行](#%e8%a1%8c%e9%95%bf%e5%ba%a6%e5%92%8c%e6%8d%a2%e8%a1%8c)
-    - [代码块](#%e4%bb%a3%e7%a0%81%e5%9d%97)
-    - [关键词](#%e5%85%b3%e9%94%ae%e8%af%8d)
-  - [语法](#%e8%af%ad%e6%b3%95)
-  - [变量](#%e5%8f%98%e9%87%8f)
-    - [标识符](#%e6%a0%87%e8%af%86%e7%ac%a6)
-    - [常量](#%e5%b8%b8%e9%87%8f)
-    - [字面量](#%e5%ad%97%e9%9d%a2%e9%87%8f)
-  - [注释](#%e6%b3%a8%e9%87%8a)
+    - [分号](#分号)
+    - [空白](#空白)
+    - [行长度和换行](#行长度和换行)
+    - [代码块](#代码块)
+    - [关键词](#关键词)
+  - [语法](#语法)
+  - [变量](#变量)
+    - [标识符](#标识符)
+    - [常量](#常量)
+    - [字面量](#字面量)
+  - [注释](#注释)
   - [use strict](#use-strict)
-    - [浏览器控制台](#%e6%b5%8f%e8%a7%88%e5%99%a8%e6%8e%a7%e5%88%b6%e5%8f%b0)
-    - [坚持使用 "use strict"](#%e5%9d%9a%e6%8c%81%e4%bd%bf%e7%94%a8-%22use-strict%22)
+    - [浏览器控制台](#浏览器控制台)
+    - [坚持使用 "use strict"](#坚持使用-use-strict)
 
-## Code structure
+2021-05-28, 14:34
+***
+
+## 代码结构
 
 ### JavaScript 程序
 
@@ -50,7 +53,7 @@ document.getElementById("demo").innerHTML = "Hello Kitty.";
 
 大多数 JavaScript 程序都包含许多 JavaScript 语句，这些语句按照它们被编写的顺序依次执行。
 
-### 分号 `；`
+### 分号
 
 分号表示语句的结尾。如：
 
@@ -141,7 +144,7 @@ function myFunction() {
 **太长不看版**：
 
 - let， 现代声明变量
-- var, 老式什么变量
+- var, 老式生命变量
 - const, 声明常量
 
 变量用于存储数据，JavaScript 使用关键字 `let` 声明变量，`=` 用于变量赋值。
@@ -172,8 +175,6 @@ let x = 7;
 - 标识符的首字符必须是字母、下划线或美元符（$）。
 - 区分大小写。
 - 保留字（如关键字）不能用作变量名称。
-
-
 
 标识符的习惯写法有多种。如
 
@@ -255,6 +256,8 @@ alert(color); // #FF7F00
 // 代码以现代模式工作
 ...
 ```
+
+"use strict" 也可以放在函数开头，这样就只在该函数中启用严格模式。
 
 ### 浏览器控制台
 

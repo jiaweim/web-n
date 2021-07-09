@@ -1,5 +1,17 @@
 # DOM Selection
 
+- [DOM Selection](#dom-selection)
+  - [方法总结](#方法总结)
+  - [select](#select)
+    - [Select Element By Name](#select-element-by-name)
+    - [Select Elelemnt by Id](#select-elelemnt-by-id)
+  - [selectAll](#selectall)
+    - [Select All Elements by Name](#select-all-elements-by-name)
+    - [Select All Elements by CSS Class Name](#select-all-elements-by-css-class-name)
+  - [Select Nested Elements](#select-nested-elements)
+
+## 方法总结
+
 |Method|Description|
 |---|---|
 |`d3.select(css-selector)`|返回匹配css-selector的第一个HTML元素|

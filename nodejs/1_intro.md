@@ -1,11 +1,14 @@
 # Node.js
 
 - [Node.js](#nodejs)
+  - [简介](#简介)
   - [Node.js Process Model](#nodejs-process-model)
-    - [传统网络服务器模型](#%e4%bc%a0%e7%bb%9f%e7%bd%91%e7%bb%9c%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%a8%a1%e5%9e%8b)
-    - [Node.js 模型](#nodejs-%e6%a8%a1%e5%9e%8b)
-  - [安装](#%e5%ae%89%e8%a3%85)
+    - [传统网络服务器模型](#传统网络服务器模型)
+    - [Node.js 模型](#nodejs-模型)
+  - [安装](#安装)
   - [Node.js Console](#nodejs-console)
+
+## 简介
 
 Node.js 是基于 Chrome 的 V8 JavaScript 引擎构建的开源服务器端 JavaScript runtime 环境。提供了事件驱动的非阻塞（异步）I/O和跨平台运行时环境。
 
